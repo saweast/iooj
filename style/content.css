@@ -1,7 +1,45 @@
 .content-wrapper {
-    height: 500px;
+    padding-top: 65px;
     background-color: #56cad6;
     background-image: url('../img/icons-texture.png');
     background-attachment: fixed;
-    background-position-y: -55px;
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.characters {
+    position: relative;
+    display: flex;
+}
+
+.characters figure {
+    margin: 0;
+}
+.female figcaption,
+.male figcaption {
+    position: relative;
+    display: flex;
+    width: 255px;
+    height: 205px;
+    text-align: center;
+    background-image: url('../img/male-cloud.png');
+    align-items: center;
+    justify-content: center;
+}
+.male figcaption {
+	transform: rotate(-10deg);
+}
+.female figcaption {
+    width: 276px;
+    background-image: url('../img/female-cloud.png');
+    transform: rotate(17deg);
+}
+.male figcaption p,
+.female figcaption p {
+	position: relative;
+	top: -10px;
 }

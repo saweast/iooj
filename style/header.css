@@ -1,6 +1,7 @@
 .hdr-wrapper {
-    width: 100%;
     position: fixed;
+    z-index: 99;
+    width: 100%;
     background-color: white;
 }
 
