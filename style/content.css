@@ -14,6 +14,9 @@
 .characters {
     position: relative;
     display: flex;
+    justify-content: center;
+    width: 80%;
+    padding-top: 190px;
 }
 
 .characters figure {
@@ -21,7 +24,7 @@
 }
 .female figcaption,
 .male figcaption {
-    position: relative;
+    position: absolute;
     display: flex;
     width: 255px;
     height: 205px;
@@ -32,14 +35,29 @@
 }
 .male figcaption {
 	transform: rotate(-10deg);
+	top: -140px;
+    left: -165px;
 }
 .female figcaption {
     width: 276px;
     background-image: url('../img/female-cloud.png');
     transform: rotate(17deg);
+    top: -125px;
+    left: 95px;
 }
 .male figcaption p,
 .female figcaption p {
 	position: relative;
 	top: -10px;
 }
+.male,
+.female {
+	position: relative;
+}
+.male {
+	left: -80px;
+}
+.female {
+	top: -20px;
+}
+
