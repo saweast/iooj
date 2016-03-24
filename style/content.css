@@ -1,0 +1,7 @@
+.content-wrapper {
+    height: 500px;
+    background-color: #56cad6;
+    background-image: url('../img/icons-texture.png');
+    background-attachment: fixed;
+    background-position-y: -55px;
+}

@@ -1,5 +1,7 @@
 .hdr-wrapper {
     width: 100%;
+    position: fixed;
+    background-color: white;
 }
 
 header {
