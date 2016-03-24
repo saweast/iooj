@@ -1,0 +1,85 @@
+.hdr-wrapper {
+    width: 100%;
+}
+
+header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 65px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 190px;
+    height: 110px;
+    text-align: center;
+    border-radius: 0 0 2px 2px;
+    background: linear-gradient(#56cad6, #48a9b3);
+    box-shadow: -5px 5px 5px 0 rgba(0, 0, 0, .75);
+    align-self: flex-start;
+}
+
+.logo img {
+    padding-top: 7px;
+}
+
+.logo figure {
+    margin: 0;
+}
+
+.logo a {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav li {
+    line-height: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid #e5e5e5;
+    flex-grow: 1;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+.userActions ul,
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.userActions a,
+nav a {
+    color: #3e505c;
+}
+
+.userActions a:hover,
+nav a:hover {
+    color: #d34e43;
+}
+
+.userActions {
+    margin-left: 70px;
+}
+
+.userActions li {
+    padding-right: 15px;
+    padding-left: 15px;
+}
