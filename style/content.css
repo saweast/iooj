@@ -1,14 +1,16 @@
-.content-wrapper {
+.main-wrapper {
     padding-top: 65px;
     background-color: #56cad6;
     background-image: url('../img/icons-texture.png');
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 .main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .characters {
@@ -17,6 +19,7 @@
     justify-content: center;
     width: 80%;
     padding-top: 190px;
+    z-index: 1;
 }
 
 .characters figure {
@@ -60,4 +63,42 @@
 .female {
 	top: -20px;
 }
-
+.caption {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+    right: 0;
+}
+.caption h1 {
+	font-family: "Comic Sans MS", sans-serif;
+	font-weight: 500;
+	width: 410px;
+	text-align: center;
+	line-height: 1;
+	color: white;
+}
+.clouds {
+	position: relative;
+	top: -80px;
+	margin-bottom: -80px;
+}
+.clouds::before {
+	content: "";
+	display: block;
+	position: relative;
+	height: 138px;
+	width: 100%;
+	background-image: url("../img/clouds-front.png");
+	background-size: 100% 100%;
+	z-index: 1;
+}
+.clouds::after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 144px;
+	width: 100%;
+	background-image: url("../img/clouds-transparent.png");
+	background-size: 100% 100%;
+	top:-6px;
+}
