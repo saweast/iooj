@@ -1,33 +1,39 @@
 /* !!!! */
+
+
 /* первый блок, а именно блок с персонажами */
+
+
 /* !!!! */
+
 .main-wrapper {
+    overflow: hidden;
     padding-top: 65px;
     background-color: #56cad6;
     background-image: url('../img/icons-texture.png');
     background-attachment: fixed;
-    overflow: hidden;
 }
 
 .main {
+    position: relative;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
 }
 
 .characters {
     position: relative;
+    z-index: 1;
     display: flex;
-    justify-content: center;
     width: 80%;
     padding-top: 190px;
-    z-index: 1;
+    justify-content: center;
 }
 
 .characters figure {
     margin: 0;
 }
+
 .female figcaption,
 .male figcaption {
     position: absolute;
@@ -39,91 +45,207 @@
     align-items: center;
     justify-content: center;
 }
+
 .male figcaption {
-	transform: rotate(-10deg);
-	top: -140px;
+    top: -140px;
     left: -165px;
+    transform: rotate(-10deg);
 }
+
 .female figcaption {
-    width: 276px;
-    background-image: url('../img/female-cloud.png');
-    transform: rotate(17deg);
     top: -125px;
     left: 95px;
+    width: 276px;
+    transform: rotate(17deg);
+    background-image: url('../img/female-cloud.png');
 }
+
 .male figcaption p,
 .female figcaption p {
-	position: relative;
-	top: -10px;
+    position: relative;
+    top: -10px;
 }
+
 .male,
 .female {
-	position: relative;
+    position: relative;
 }
+
 .male {
-	left: -80px;
+    left: -80px;
 }
+
 .female {
-	top: -20px;
+    top: -20px;
 }
+
 .caption {
-	display: inline-block;
-	position: absolute;
-	top: 50%;
+    position: absolute;
+    top: 50%;
     right: 0;
+    display: inline-block;
 }
+
 .caption h1 {
-	font-family: "Comic Sans MS", sans-serif;
-	font-weight: 500;
-	width: 410px;
-	text-align: center;
-	line-height: 1;
-	color: white;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    width: 410px;
+    text-align: center;
+    color: white;
 }
+
 .clouds {
-	position: relative;
-	top: -80px;
-	margin-bottom: -80px;
+    position: relative;
+    top: -80px;
+    margin-bottom: -80px;
 }
+
 .clouds::before {
-	content: "";
-	display: block;
-	position: relative;
-	height: 138px;
-	width: 100%;
-	background-image: url("../img/clouds-front.png");
-	background-size: 100% 100%;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 138px;
+    content: '';
+    background-image: url('../img/clouds-front.png');
+    background-size: 100% 100%;
 }
+
 .clouds::after {
-	content: "";
-	display: block;
-	position: absolute;
-	height: 144px;
-	width: 100%;
-	background-image: url("../img/clouds-transparent.png");
-	background-size: 100% 100%;
-	top:-6px;
+    position: absolute;
+    top: -6px;
+    display: block;
+    width: 100%;
+    height: 144px;
+    content: '';
+    background-image: url('../img/clouds-transparent.png');
+    background-size: 100% 100%;
 }
+
+
 /* !!!! */
+
+
 /* Второй блок, а именно блок с мозгом */
+
+
 /*  */
+
 .brain-wrapper {
-	width: 100%;
-	background-color: white;
+    width: 100%;
+    background-color: white;
 }
+
 .brain-block {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 50px;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    justify-content: center;
 }
+
 .brain {
-	height: 424px;
-	width: 422px;
-	background-image: url('../img/brain.png');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+    position: relative;
+    width: 422px;
+    height: 424px;
+    background-image: url('../img/brain.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.brain li {
+    position: absolute;
+    text-align: center;
+}
+.brain li:hover {
+	cursor: pointer;
+}
+.brain li:hover div:nth-child(2) {
+	opacity: 1;
+	font-size: 1em;
+	width: 276px;
+    transition: .2s ease 0s;
+}
+.brain li:hover img {
+    transition: .5s ease 0s;
+    transform-origin: 50% 50%;
+	transform: scale(1.2, 1.2);
+}
+.brain div:nth-child(1) {
+    position: relative;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #4ca9b4;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .75);
+    justify-content: center;
+    align-items: center;
+}
+.brain div:nth-child(2) {
+	position: absolute;
+	width: 250px;
+	opacity: 0.5;
+    font-size: 0.9em;
+}
+.brain img {
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+.brain a {
+    text-decoration: none;
+}
+
+.brain h2 {
+    margin-bottom: 25px;
+    color: #1c3343;
+}
+
+.brain p {
+    color: #707e8a;
+}
+
+.brain li:nth-child(1) {
+	top: -30px;
+    left: 90px;
+}
+.brain li:nth-child(1) div:nth-child(2) {
+	top: -30px;
+    left: -300px;
+}
+.brain li:nth-child(2) {
+	top: 95px;
+    left: 395px;
+}
+.brain li:nth-child(2) div:nth-child(2) {
+	top: -90px;
+    left: 90px;
+}
+.brain li:nth-child(3) {
+	top: 175px;
+    left: 420px;
+}
+.brain li:nth-child(3) div:nth-child(2) {
+	top: -5px;
+    left: 50px;
+}
+.brain li:nth-child(4) {
+	top: 350px;	
+	left: 48px;
+}
+.brain li:nth-child(4) div:nth-child(2) {
+	top: -20px;
+    left: -300px;
+}
+.brain li:nth-child(5) {
+	top: 175px;
+    left: -75px;
+}
+.brain li:nth-child(5) div:nth-child(2) {
+	top: -25px;
+    left: -280px;
 }
