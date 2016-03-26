@@ -1,0 +1,70 @@
+.footer-wrapper {
+    overflow: hidden;
+    background-color: #56cad6;
+    background-image: url('../img/icons-texture.png');
+    background-attachment: fixed;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0 25px 0;
+    align-items: center;
+}
+footer > p {
+	font-size: 1.2em;
+	color: white;
+}
+footer ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.ftr-contacts li {
+	margin-right: 50px;
+}
+.ftr-contacts li a {
+	font-size: 1.2em;
+	color: white;
+	text-decoration: none;
+	position: relative;
+}
+.ftr-contacts li a::before {
+	content: "";
+	display: inline-block;
+	height: 21px;
+	width: 30px;
+	background-image: url("../img/mail-icon.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-right: 15px;
+	top: 5px;
+	position: relative;
+}
+.ftr-repost li {
+    width: 35px;
+    height: 30px;
+    border: 1px solid #337880;
+    border-radius: 3px;
+    background: linear-gradient(#5977b5, #4464a5);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .75);
+    margin-left: 15px;
+}
+
+.ftr-repost a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftr-repost .tw {
+    background: linear-gradient(#00d0fd, #00afef);
+}
