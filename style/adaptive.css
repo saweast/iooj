@@ -3,6 +3,9 @@
 		max-width: 768px;
 		font-size: 0.9em;
 	}
+	nav {
+		margin-left: 0;
+	}
 	.userActions {
 		margin-left: 0;
 	}
