@@ -1,0 +1,89 @@
+@media (max-width: 769px) {
+	.hdr-wrapper {
+		max-width: 768px;
+		font-size: 0.9em;
+	}
+	.userActions {
+		margin-left: 0;
+	}
+	.caption {
+		position: static;
+		display: block;
+	}
+	.caption h1 {
+		margin-top: 50px;
+		width: auto;
+	}
+	.characters {
+		margin: 0 auto;
+	}
+	.male {
+		left: -35px;
+	}
+	.female {
+		left: -25px;
+	}
+	.brain {
+		width: calc(422px/2);
+    	height: calc(424px/2);	
+	}
+	.brain h2 {
+		margin-bottom: 5px;
+	}
+	.brain p {
+		margin-top: 0px;
+	}
+	.brain img {
+		height: 20px;
+	}
+	.brain div:nth-child(1) {
+		height: 40px;
+		width: 40px;
+	}
+	.brain div:nth-child(2) {
+		opacity: 1;
+	}
+	.brain li:nth-child(1) {
+	    top: -15px;
+	    left: 38px;
+	}
+	.brain li:nth-child(1) div:nth-child(2) {
+	    top: -40px;
+	    left: -242px;
+	}
+	.brain li:nth-child(2) {
+	    top: 38px;
+	    left: 198px;
+	}
+	.brain li:nth-child(2) div:nth-child(2) {
+	    top: -100px;
+	    left: 25px;
+	}
+	.brain li:nth-child(3) {
+	    top: 105px;
+	    left: 199px;
+	}
+	.brain li:nth-child(3) div:nth-child(2) {
+	    top: -5px;
+	    left: 5px;
+	}
+	.brain li:nth-child(4) {
+	    top: 177px;
+	    left: 20px;
+	}
+	.brain li:nth-child(4) div:nth-child(2) {
+	    top: -10px;
+	    left: -243px;
+	}
+	.brain li:nth-child(5) {
+	    top: 72px;
+	    left: -38px;
+	}
+	.brain li:nth-child(5) div:nth-child(2) {
+	    top: -10px;
+	    left: -229px;
+	}
+	.news-item div {
+		height: 120px;
+	}
+}

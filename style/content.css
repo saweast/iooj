@@ -295,6 +295,12 @@
     position: relative;
     margin-bottom: 20px;
     flex-basis: 27%;
+        display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: stretch;
+        justify-content: space-between;
+    min-height: 430px;
 }
 
 .news-item * {
@@ -303,6 +309,12 @@
 
 .news-item a {
     text-decoration: none;
+}
+.news-item a.news-preview {
+    display: flex;
+    flex-direction: column;
+    min-height: 409px;
+    justify-content: space-between;
 }
 
 .news-item div {
